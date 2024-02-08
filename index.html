@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Hassani</title>
+    <link rel="shortcut icon" href="./assets/images/mohammad.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="./assets/js/app.js"></script>
+</head>
+<body>
+    <main>
+        <!-- Navbar -->
+        <nav id="nav">
+            <div class="nav-logo">
+                <img src="./assets/images/mohammad.png" alt="Logo" id="logo">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><img src="./assets/images/moon.png" alt="Dark Mode" class="icon icon-mode" id="theme-img" onclick="toggleMode(this)"></li>
+            </ul>
+            <div class="responsive-navbar responsive">
+                <a href="#" onclick="openNav()"><img class="icon icon-menu" id="resp-nav-icon" src="./assets/images/menu.png" alt="Menu" class="icon"></a>
+                <div class="closing-nav" onclick="closeNav()"></div>
+                <ul class="nav-list nav-list-res">
+                    <li class="nav-item"><img src="./assets/images/times.png" onclick="closeNav()" id="close-nav" class="icon icon-close" alt="Close"></li>
+                    <li class="nav-item"><a onclick="closeNav()" href="#about">About</a></li>
+                    <li class="nav-item"><a onclick="closeNav()" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a onclick="closeNav()" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a onclick="closeNav()" href="#contact">Contact</a></li>
+                    <li class="nav-item" onclick="closeNav()"><a onclick="toggleMode(this)" href="#" id="theme-responsive">Dark Mode</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Home -->
+        <section id="home" class="home">
+            <div class="home-text">
+                <div class="home-intro">
+                    <h1 class="home-intro-name"><span class="im">I'm</span> <span class="mohammad">Mohammad</span> Hassani</h1>
+                    <h4 class="home-intro-job">Frontend Developer</h4>
+                </div>
+                <div class="home-about">
+                    <p class="home-about-text">
+                        This is my official portfolio website to showcase <br class="break-line"/> all my projects related to Frontend development.
+                    </p>
+                </div>
+                <div class="home-cv">
+                    <a href="./assets/cv.pdf" download="Mohammad Hassani CV" class="btn btn-home-cv">Download CV</a>
+                </div>
+                <div class="home-contact">
+                    <a href="https://www.linkedin.com/in/mohammad-hassani-459453281" target="_blank"><img id="linkedin" class="icon" src="./assets/images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Mohammad-Hassani313" target="_blank"><img id="github" class="icon" src="./assets/images/github.png" alt="GitHub"></a>
+                    <a href="mailto:jebreal.com@gmail.com?subject=Feedback&body='I have visited your portofolio'" target="_blank"><img id="email" class="icon" src="./assets/images/email.png" alt="Email"></a>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="./assets/images/background.png" alt="Background" id="photo-bg">
+                <img src="./assets/images/My_photo.png" alt="My Photo" class="home-img-my-img">
+            </div>
+        </section>
+        <!-- About -->
+        <section id="about" class="section about">
+            <div class="about-title">
+                <p>Get to know more</p>
+                <h1>About Me</h1>
+            </div>
+            <div class="about-content">
+                <div class="about-content-img">
+                    <img src="./assets/images/about-mohammad2.jpg" alt="My Photo">
+                </div>
+                <div class="about-content-me">
+                    <div class="about-content-me-experience hover">
+                        <img src="./assets/images/development.png" id="development" class="icon icon-about" alt="Experience">
+                        <h4 class="about-content-me-experience-title">Experience</h4>
+                        <p class="about-content-me-experience-years">1+ year</p>
+                        <p class="about-content-me-experience-job">Frontend Development</p>
+                    </div>
+                    <div class="about-content-me-education hover">
+                        <img src="./assets/images/education.png" id="education" class="icon icon-about" alt="Education">
+                        <h4 class="about-content-me-education-title">Education</h4>
+                        <p class="about-content-me-education-grade">12<sup>th</sup> grade</p>
+                        <p class="about-content-me-education-location">Jebreal Boy's School</p>
+                    </div>
+                    <div class="about-content-me-text">
+                        <p>
+                            Hello, I am Mohammad Hassani, a self-taught front-end web developer with a passion for creating responsive and user-friendly websites. With over a year of experience, I have worked on various projects. I love cooperating with professional teams. I am always eager to take on new challanges and expand my knowledge in the ever-evolving world of web development. Let's create something amazing together!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-arrow">
+                <a href="#skills"><img src="./assets/images/down-arrow.png" class="icon icon-navigation" alt="Navigation Arrow"></a>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="section skills">
+            <div class="skills-title">
+                <p>Expolore My</p>
+                <h1>Skills</h1>
+            </div>
+            <div class="skills-content">
+                <div class="skills-content-frontend hover">
+                    <h3 class="skills-content-frontend-title">Frontend Skills</h3>
+                    <div class="skills-content-frontend-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skills-content-frontend-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skills-content-frontend-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>BootStrap5</h4>
+                    </div>
+                    <div class="skills-content-frontend-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>JavaScipt</h4>
+                    </div>
+                    <div class="skills-content-frontend-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>React.js</h4>
+                    </div>
+                </div>
+                <div class="skills-content-others hover">
+                    <h3 class="skills-content-others-title">Languages & Technologies</h3>
+                    <div class="skills-content-others-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>C++</h4>
+                    </div>
+                    <div class="skills-content-others-skill">
+                        <img src="./assets/images/approval.png" class="icon-skill" alt="Approval">
+                        <h4>Git</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-arrow">
+                <a href="#projects"><img src="./assets/images/down-arrow.png" class="icon icon-navigation" alt="Navigation Arrow"></a>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <div class="projects-title">
+                <p>Browse My Recent</p>
+                <h1>Projects</h1>
+            </div>
+            <div class="projects-cards">
+                <div class="projects-card">
+                    <img src="./assets/images/beyond-the-wall-persian.jpg" alt="beyond-the-wall-persian">
+                    <div class="projects-card-text">
+                        <h3>Beyond The Wall (Persian)</h3>
+                        <div class="projects-card-buttons">
+                            <a href="https://github.com/Mohammad-Hassani313/Book-Beyond-the-wall-persian" target="_blank" class="btn-card">GitHub</a>
+                            <a href="https://mohammad-hassani313.github.io/Book-Beyond-the-wall-persian/" target="_blank" class="btn-card">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img src="./assets/images/beyond-the-wall.jpg" alt="beyond-the-wall">
+                    <div class="projects-card-text">
+                        <h3>Beyond The Wall</h3>
+                        <div class="projects-card-buttons">
+                            <a href="https://github.com/Mohammad-Hassani313/Book-Beyond-the-wall" target="_blank" class="btn-card">GitHub</a>
+                            <a href="https://mohammad-hassani313.github.io/Book-Beyond-the-wall" target="_blank" class="btn-card">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img src="./assets/images/staff-list.jpg" alt="staff-list">
+                    <div class="projects-card-text">
+                        <h3>Staff List Maker</h3>
+                        <div class="projects-card-buttons">
+                            <a href="https://github.com/Mohammad-Hassani313/staff-list-maker" target="_blank" class="btn-card">GitHub</a>
+                            <a href="https://mohammad-hassani313.github.io/staff-list-maker/" target="_blank" class="btn-card">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card project-four">
+                    <img src="./assets/images/city-architect.jpg" alt="city-architect">
+                    <div class="projects-card-text">
+                        <h3>City Architect</h3>
+                        <div class="projects-card-buttons">
+                            <a href="https://github.com/Mohammad-Hassani313/city-architects" target="_blank" class="btn-card">GitHub</a>
+                            <a href="https://mohammad-hassani313.github.io/city-architects/" target="_blank" class="btn-card">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-arrow">
+                <a href="#contact"><img src="./assets/images/down-arrow.png" class="icon icon-navigation" alt="Navigation Arrow"></a>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="contact-title">
+                <p>Get In Touch</p>
+                <h1>Contact Me</h1>
+            </div>
+            <div class="contact-list hover">
+                <div class="contact-list-content">
+                    <img src="./assets/images/contacts/gmail.png" alt="Email" class="icon icon-contact">
+                    <a href="mailto:jebreal.com@gmail.com" target="_blank" class="contact-list-content-link">Email Me</a>
+                </div>
+                <div class="contact-list-content">
+                    <img src="./assets/images/contacts/whatsapp.png" alt="Whatsapp" class="icon icon-contact">
+                    <a href="https://wa.me/qr/BWKRVAI7O2AQH1" target="_blank" class="contact-list-content-link">My Whatsapp</a>
+                </div>
+                <div class="contact-list-content">
+                    <img src="./assets/images/contacts/telegram.png" alt="Telegram" class="icon icon-contact">
+                    <a href="https://t.me/Kateb3134" target="_blank" class="contact-list-content-link">My Telegram</a>
+                </div>
+                <div class="contact-list-content">
+                    <img src="./assets/images/contacts/linkedin.png" alt="LinkedIn" class="icon icon-contact">
+                    <a href="https://www.linkedin.com/in/mohammad-hassani-459453281" target="_blank" class="contact-list-content-link">My LinkedIn</a>
+                </div>
+            </div>
+            <div class="navigation-arrow last-nav-arrow">
+                <a href="#nav"><img src="./assets/images/up-arrow.png" class="icon icon-navigation" alt="Navigation Arrow"></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
